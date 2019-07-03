@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhangyang.mapper.UserMapper">
+
+    <update id="updateUser" parameterType="com.zhangyang.model.User">
+        update user set
+        name=#{name},age=#{age},address=#{address},qq=#{qq},wechat=#{wechat},email=#{email},sex=#{sex},birthday=#{birthday},account=#{account}
+        where id=#{id}
+    </update>
+    <select id="findByUserid" parameterType="int" resultType="com.zhangyang.model.User">
+        select * from user where id = #{value}
+    </select>
+
+</mapper>

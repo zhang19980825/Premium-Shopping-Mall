@@ -1,0 +1,50 @@
+package com.zhangyang.service;
+
+import com.zhangyang.dao.UserDao;
+import com.zhangyang.model.User;
+import com.zhangyang.vo.UserVo;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+/**
+ * @Author: ZhangYang
+ * @Date: 2019/5/21 20:59
+ */
+@Service
+public class UserService {
+
+    @Autowired
+    UserDao userDao;
+
+    public User findUserInfo() {
+        return userDao.findUserInfo();
+    }
+
+    public void insertuserInfo(User user) {
+        userDao.insertuserInfo(user);
+    }
+
+    public void updateUser(User user) {
+        userDao.updateUser(user);
+    }
+
+    public User findByUserid(int id) {
+        return userDao.findByUserid(id);
+    }
+
+    public List<User> queryuserbyvo(UserVo userVo) {
+        return userDao.queryuserbyvo(userVo);
+    }
+
+    public void deleteuserbyid(int id) {
+        userDao.deleteuserbyid(id);
+    }
+
+    public User findByUsername(String name){
+        return userDao.findByUsername(name);
+    }
+
+
+}

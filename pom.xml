@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.zhangyang.shop</groupId>
+    <artifactId>zyshop</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>zhangyangadmin</module>
+        <module>zhangyangCloudServer</module>
+        <module>zhangyangcommon</module>
+        <module>zhangyangmerchant</module>
+        <module>zhangyangmsgqueueserv</module>
+        <module>zhangyangorder</module>
+        <module>zhangyangpayserv</module>
+        <module>zhangyangPinDaoIndex</module>
+        <module>zhangyangproduct</module>
+        <module>zhangyangproducttype</module>
+        <module>zhangyangrediserver</module>
+        <module>zhangyangshopUser</module>
+        <module>ribbonTest</module>
+        <module>zhangyangrobbinserver</module>
+        <module>DruidTest</module>
+        <module>springbootquartz</module>
+
+
+    </modules>
+
+
+</project>
